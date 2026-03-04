@@ -44,7 +44,7 @@ export const programRegistry: Record<string, ProgramDef> = {
 	},
 	projects: {
 		name: 'My Projects',
-		icon: '/icons/folder.png',
+		icon: '/icons/my-documents.png',
 		component: Projects,
 		defaultWidth: 550,
 		defaultHeight: 400,
