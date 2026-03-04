@@ -62,7 +62,7 @@
 	<fieldset>
 		<legend>Core Competencies</legend>
 		<div style="padding: 4px; display: flex; flex-wrap: wrap; gap: 4px;">
-			{#each ['Salesforce', 'commercetools', 'Azure Entra External ID', '.NET / ASP.NET', 'Solution Architecture', 'Tech Lead', 'Azure Service Bus', 'DevOps', 'Microservices', 'Redis Caching', 'Clean Code'] as skill}
+			{#each ['C# / .NET', 'ASP.NET Core', 'Azure', 'Solution Architecture', 'REST APIs', 'Microservices', 'SQL Server', 'Entity Framework', 'CI/CD', 'Docker', 'Git', 'Redis', 'Azure Service Bus', 'Azure AD / Entra ID', 'Event-Driven Architecture', 'CIAM', 'Technical Leadership', 'Clean Architecture', 'SOLID', 'Code Review', 'Mentoring'] as skill}
 				<span style="background: #e0e8f0; padding: 2px 8px; border-radius: 2px; font-size: 11px; border: 1px solid #b0c0d0;">{skill}</span>
 			{/each}
 		</div>
