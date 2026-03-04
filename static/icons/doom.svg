@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8B0000"/>
+      <stop offset="100%" stop-color="#4a0000"/>
+    </linearGradient>
+  </defs>
+  <rect width="48" height="48" rx="4" fill="url(#bg)"/>
+  <text x="24" y="32" text-anchor="middle" font-family="Impact,Arial Black,sans-serif" font-size="22" fill="#ff4444" stroke="#000" stroke-width="0.5">DOOM</text>
+</svg>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Anders Moeslund - CV</title>
+<style>
+  @import url('https://unpkg.com/xp.css@0.7.0/dist/XP.css');
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 20px;
+    background: #3a6ea5;
+    font-family: 'Tahoma', 'Segoe UI', sans-serif;
+    font-size: 11px;
+    color: #000;
+    width: 210mm;
+  }
+
+  .window {
+    background: #ece9d8;
+    max-width: 100%;
+  }
+
+  .window-body {
+    padding: 8px;
+  }
+
+  fieldset {
+    margin: 6px 0;
+    padding: 6px 8px;
+  }
+
+  legend {
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  h2 {
+    margin: 0 0 2px 0;
+    font-size: 16px;
+    color: #003399;
+  }
+
+  .subtitle {
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 8px;
+  }
+
+  .contact-info {
+    display: flex;
+    gap: 16px;
+    font-size: 10px;
+    color: #555;
+    margin-bottom: 4px;
+    flex-wrap: wrap;
+  }
+
+  .experience-item {
+    margin-bottom: 6px;
+  }
+
+  .experience-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .job-title {
+    font-weight: bold;
+    font-size: 11px;
+  }
+
+  .job-meta {
+    color: #666;
+    font-size: 10px;
+    margin-bottom: 2px;
+  }
+
+  .job-desc {
+    font-size: 10px;
+    line-height: 1.4;
+  }
+
+  .separator {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 4px 0;
+  }
+
+  .skills-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+  }
+
+  .skill-tag {
+    background: #e0e8f0;
+    padding: 1px 6px;
+    border-radius: 2px;
+    font-size: 9px;
+    border: 1px solid #b0c0d0;
+  }
+
+  .skill-tag.security {
+    background: #f0e0e0;
+    border-color: #d0b0b0;
+  }
+
+  .two-col {
+    display: flex;
+    gap: 8px;
+  }
+
+  .two-col > * {
+    flex: 1;
+  }
+</style>
+</head>
+<body>
+<div class="window">
+  <div class="title-bar">
+    <div class="title-bar-text">📄 Curriculum Vitae — Anders Bøgetoft Moeslund</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body">
+    <h2>Anders Bøgetoft Moeslund</h2>
+    <div class="subtitle">Lead Backend Developer (.NET) @ IMPACT Commerce</div>
+    <div class="contact-info">
+      <span>📍 Odense, Denmark</span>
+      <span>🔗 linkedin.com/in/amoeslund</span>
+      <span>🌐 amoeslund.dk</span>
+      <span>💻 github.com/Amoeslund</span>
+    </div>
+
+    <fieldset>
+      <legend>Experience</legend>
+
+      <div class="experience-item">
+        <div class="job-title">Lead Dotnet Developer — IMPACT Commerce</div>
+        <div class="job-meta">May 2024 – Present</div>
+        <div class="job-desc">Responsible for the design and architecture of a new IAM solution for Solar Group's B2B e-commerce platform based on Azure Entra External ID. Leading migration from a legacy Salesforce-based user structure to a modern CIAM architecture with JIT password migration. Close collaboration with the client on solution design across Salesforce, commercetools, and SAP. Author of technical design documents and responsible for migration strategy from pilot to full rollout.</div>
+        <div class="job-desc" style="margin-top:3px;">Previously responsible for the technical direction of FTZ's e-commerce site with 200,000 daily sessions. Optimization of flows using Azure Service Bus for event-driven architecture. Close collaboration with the client's PO for scoping and estimation. Mentoring other developers on user flows in Azure AD B2C and the authentication flow in the frontend.</div>
+      </div>
+      <hr class="separator" />
+
+      <div class="experience-item">
+        <div class="job-title">Senior Backend Developer — IMPACT Commerce</div>
+        <div class="job-meta">May 2022 – May 2024</div>
+        <div class="job-desc">Responsible for the technical direction of FTZ's e-commerce site with 200,000 daily sessions. Optimization of flows using Azure Service Bus for event-driven architecture. Close collaboration with the client's PO for scoping and estimation. Mentoring other developers on user flows in Azure AD B2C and the authentication flow in the frontend.</div>
+      </div>
+      <hr class="separator" />
+
+      <div class="experience-item">
+        <div class="job-title">Head of Software Development — BlueKey</div>
+        <div class="job-meta">Sep 2021 – May 2022</div>
+        <div class="job-desc">Responsible for the software development team of three developers, as well as participating as technical sparring partner in client meetings for both new development and maintenance. Set up Jira automation using triggers based on GitHub workflow.</div>
+      </div>
+      <hr class="separator" />
+
+      <div class="experience-item">
+        <div class="job-title">Software Developer — BlueKey</div>
+        <div class="job-meta">Oct 2020 – Sep 2021</div>
+        <div class="job-desc">Backend development of a microservice-based data search engine hosted in Azure. Performance optimization using distributed caching and auto-scaling. Set up DevOps pipeline with GitHub Actions for automated testing and deployment. Built a framework for easier unit test writing and set up code coverage monitoring tools.</div>
+      </div>
+      <hr class="separator" />
+
+      <div class="experience-item">
+        <div class="job-title">.NET Developer — Hesehus A/S</div>
+        <div class="job-meta">May 2019 – Oct 2020</div>
+        <div class="job-desc">Support and development of e-commerce solutions. Development of backend APIs with .NET Core MVC and ASP.NET. Performance optimization with Redis caching and SQL query improvements.</div>
+      </div>
+      <hr class="separator" />
+
+      <div class="experience-item">
+        <div class="job-title">Consultant — ESDHKonsulenterne</div>
+        <div class="job-meta">Jan 2018 – Apr 2019</div>
+        <div class="job-desc">Consulting for municipalities on case migration from ESDH systems to SBSYS. Development and maintenance of a TIFF rendering engine for file archival. Built a distributed queue system with RabbitMQ. Server operations and provisioning.</div>
+      </div>
+      <hr class="separator" />
+
+      <div class="experience-item">
+        <div class="job-title">Teaching Assistant — University of Southern Denmark</div>
+        <div class="job-meta">Feb 2016 – Jan 2018</div>
+        <div class="job-desc">TA for DM505: Database Design & Programming and DM550: Introduction to Programming.</div>
+      </div>
+    </fieldset>
+
+    <div class="two-col">
+      <fieldset>
+        <legend>Education</legend>
+        <div class="job-title">BSc Computer Science</div>
+        <div class="job-meta">University of Southern Denmark (SDU), 2014 – 2018</div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Languages</legend>
+        <div>🇩🇰 Danish — Native</div>
+        <div>🇬🇧 English — Full Professional</div>
+      </fieldset>
+    </div>
+
+    <fieldset>
+      <legend>Core Competencies</legend>
+      <div class="skills-wrap">
+        <span class="skill-tag">Salesforce</span>
+        <span class="skill-tag">commercetools</span>
+        <span class="skill-tag">Azure Entra External ID</span>
+        <span class="skill-tag">.NET / ASP.NET</span>
+        <span class="skill-tag">Solution Architecture</span>
+        <span class="skill-tag">Tech Lead</span>
+        <span class="skill-tag">Azure Service Bus</span>
+        <span class="skill-tag">DevOps</span>
+        <span class="skill-tag">Microservices</span>
+        <span class="skill-tag">Redis Caching</span>
+        <span class="skill-tag">Clean Code</span>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Security Expertise</legend>
+      <div style="font-size:10px;margin-bottom:3px;">Demonstrated through IMPACT Commerce CTF (solo winner):</div>
+      <div class="skills-wrap">
+        <span class="skill-tag security">XSS</span>
+        <span class="skill-tag security">JWT Exploitation</span>
+        <span class="skill-tag security">SQL Injection</span>
+        <span class="skill-tag security">YAML RCE</span>
+        <span class="skill-tag security">IDOR</span>
+        <span class="skill-tag security">Prompt Injection</span>
+      </div>
+    </fieldset>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <!-- Door -->
+  <rect x="3" y="2" width="12" height="20" rx="1" fill="#8B7355" stroke="#5C4A2E" stroke-width="1"/>
+  <rect x="4" y="3" width="10" height="18" fill="#C4A66A"/>
+  <circle cx="12" cy="12" r="1" fill="#8B7355"/>
+  <!-- Arrow pointing out -->
+  <line x1="14" y1="12" x2="22" y2="12" stroke="#006400" stroke-width="2" stroke-linecap="round"/>
+  <polyline points="19,9 22,12 19,15" fill="none" stroke="#006400" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
