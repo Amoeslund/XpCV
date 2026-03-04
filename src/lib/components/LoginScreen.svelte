@@ -48,7 +48,7 @@
 				<img src="/images/anders.jpg" alt="Anders" class="user-avatar" onerror={(e) => { (e.currentTarget as HTMLImageElement).src = '/icons/user.png'; }} />
 				<div class="user-info">
 					<div class="user-name">Anders Moeslund</div>
-					<div class="user-title">Software Developer</div>
+					<div class="user-title">Lead Backed Developer (.NET) @ IMPACT</div>
 				</div>
 			</div>
 		</div>
