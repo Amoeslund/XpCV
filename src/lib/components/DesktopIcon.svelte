@@ -12,9 +12,20 @@
 	let isSelected = $derived($selectedIcons.has(iconId));
 	let pos = $derived($iconPositions[iconId]);
 
+	let lastTapTime = 0;
+
 	function onClick(e: MouseEvent) {
 		e.stopPropagation();
 		selectIcon(iconId, e.ctrlKey);
+
+		// Double-tap detection for mobile (dblclick doesn't fire on touch)
+		const now = Date.now();
+		if (now - lastTapTime < 400) {
+			onopen();
+			lastTapTime = 0;
+		} else {
+			lastTapTime = now;
+		}
 	}
 
 	function onDblClick() {
