@@ -249,4 +249,32 @@
 		color: rgba(255,255,255,0.6);
 		font-family: 'Tahoma', sans-serif;
 	}
+
+	@media (max-width: 600px) {
+		.login-center {
+			flex-direction: column;
+			padding: 0 16px;
+			gap: 20px;
+		}
+
+		.login-left {
+			align-items: center;
+			padding-right: 0;
+		}
+
+		.welcome-text {
+			font-size: 28px;
+		}
+
+		.login-divider {
+			width: 60%;
+			height: 2px;
+			background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.4) 20%, rgba(255,255,255,0.4) 80%, transparent 100%);
+		}
+
+		.login-right {
+			padding-left: 0;
+			justify-content: center;
+		}
+	}
 </style>

@@ -385,7 +385,6 @@ html, body {
 	background: #c8c8c8;
 }
 
-/* Boot & Login styles are now scoped in their component files */
 
 /* ============ WINDOW OVERRIDES ============ */
 /* XP.css handles the window chrome styling.
@@ -536,7 +535,59 @@ html, body {
 	color: #00f;
 }
 
-/* Minesweeper styles are now scoped in Minesweeper.svelte */
+
+/* ============ MOBILE ============ */
+@media (max-width: 600px) {
+	.desktop-icon {
+		width: 60px;
+	}
+
+	.desktop-icon img {
+		width: 36px;
+		height: 36px;
+	}
+
+	.desktop-icon span {
+		font-size: 10px;
+		max-width: 58px;
+	}
+
+	.desktop-icons {
+		gap: 2px;
+		padding: 6px;
+	}
+
+	.taskbar-item {
+		min-width: 30px;
+		max-width: 40px;
+		padding: 0 4px;
+	}
+
+	.taskbar-item span {
+		display: none;
+	}
+
+	.start-menu {
+		width: 100vw;
+		border-radius: 0;
+	}
+
+	.start-menu-body {
+		flex-direction: column;
+		min-height: auto;
+	}
+
+	.start-menu-right {
+		width: 100%;
+		border-left: none;
+		border-top: 1px solid #a4b0cc;
+	}
+
+	.start-menu-header img {
+		width: 36px;
+		height: 36px;
+	}
+}
 
 /* ============ SHUTDOWN ============ */
 .shutdown-screen {

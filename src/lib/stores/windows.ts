@@ -21,24 +21,30 @@ export function openProgram(programId: string, title: string, icon: string, widt
 	}
 
 	const id = `window-${++windowCounter}`;
+	const vw = window.innerWidth;
+	const vh = window.innerHeight;
+	const isMobile = vw < 600;
+
 	const offset = (windowCounter % 8) * 30;
-	const x = 80 + offset;
-	const y = 40 + offset;
+	const clampedWidth = Math.min(width, vw - 10);
+	const clampedHeight = Math.min(height, vh - 40);
+	const x = Math.max(0, Math.min(80 + offset, vw - clampedWidth));
+	const y = Math.max(0, Math.min(40 + offset, vh - clampedHeight - 30));
 
 	const newWindow: WindowState = {
 		id,
 		programId,
 		title,
 		icon,
-		x,
-		y,
-		width,
-		height,
+		x: isMobile ? 0 : x,
+		y: isMobile ? 0 : y,
+		width: isMobile ? vw : clampedWidth,
+		height: isMobile ? vh - 30 : clampedHeight,
 		minWidth,
 		minHeight,
 		zIndex: ++nextZIndex,
 		minimized: false,
-		maximized: false
+		maximized: isMobile
 	};
 
 	windows.update(w => [...w, newWindow]);
@@ -75,7 +81,7 @@ export function maximizeWindow(id: string) {
 			x: 0,
 			y: 0,
 			width: window.innerWidth,
-			height: window.innerHeight - 36
+			height: window.innerHeight - 30
 		};
 	}));
 }

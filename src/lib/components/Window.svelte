@@ -160,6 +160,29 @@
 		document.addEventListener('mousemove', onMouseMove);
 		document.addEventListener('mouseup', onMouseUp);
 	}
+
+	function onTitleTouchStart(e: TouchEvent) {
+		if (maximized) return;
+		if ((e.target as HTMLElement).closest('.title-bar-controls')) return;
+		const touch = e.touches[0];
+		const startX = touch.clientX - x;
+		const startY = touch.clientY - y;
+		focusWindow(id);
+
+		function onTouchMove(e: TouchEvent) {
+			e.preventDefault();
+			const t = e.touches[0];
+			updatePosition(id, t.clientX - startX, t.clientY - startY);
+		}
+
+		function onTouchEnd() {
+			document.removeEventListener('touchmove', onTouchMove);
+			document.removeEventListener('touchend', onTouchEnd);
+		}
+
+		document.addEventListener('touchmove', onTouchMove, { passive: false });
+		document.addEventListener('touchend', onTouchEnd);
+	}
 </script>
 
 {#if !minimized}
@@ -172,7 +195,7 @@
 		onmousemove={onWindowMouseMove}
 	>
 		<!-- svelte-ignore a11y_no_static_element_interactions -->
-		<div class="title-bar" onmousedown={onTitleMouseDown} ondblclick={() => maximizeWindow(id)}>
+		<div class="title-bar" onmousedown={onTitleMouseDown} ontouchstart={onTitleTouchStart} ondblclick={() => maximizeWindow(id)}>
 			<div class="title-bar-text" style="display: flex; align-items: center; gap: 4px;">
 				<img src={icon} alt="" style="width: 16px; height: 16px;" />
 				{title}
